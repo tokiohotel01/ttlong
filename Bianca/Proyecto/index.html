@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte Longueira | Refrigerados y Congelados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+    <nav class="navbar">
+        <h1>Transporte Longueira</h1>
+        <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#flota">Flota</a></li>
+            <li><a href="#porque">Por qué elegirnos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-content">
+        <h2>Transporte de Congelados y Refrigerados</h2>
+        <p>Cadena de frío garantizada · Puntualidad · Seguridad</p>
+        <a href="#contacto" class="btn">Solicitar cotización</a>
+    </div>
+</header>
+
+<section id="servicios" class="section fade-in">
+
+    <h2>Servicios</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Transporte Refrigerado</h3>
+            <p>Ideal para alimentos frescos, bebidas y productos que requieren temperatura controlada.</p>
+        </div>
+        <div class="card">
+            <h3>Transporte Congelado</h3>
+            <p>Traslado seguro de mercadería congelada manteniendo la cadena de frío.</p>
+        </div>
+        <div class="card">
+            <h3>Servicios a Medida</h3>
+            <p>Viajes programados o a demanda para empresas y particulares.</p>
+        </div>
+    </div>
+</section>
+
+<section id="Flota" class="section fade-in">
+
+    <h2>Flota y Tecnología</h2>
+    <ul class="list">
+        <li>🚚 Camionetas equipadas para frío y congelado</li>
+        <li>🌡️ Control constante de temperatura</li>
+        <li>🧼 Unidades higienizadas</li>
+        <li>📦 Transporte seguro y confiable</li>
+    </ul>
+</section>
+
+<section id="porque" class="section fade-in">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="cards">
+        <div class="card">✔️ Cadena de frío garantizada</div>
+        <div class="card">✔️ Puntualidad</div>
+        <div class="card">✔️ Atención personalizada</div>
+        <div class="card">✔️ Flexibilidad</div>
+        <div class="card">✔️ Confianza y responsabilidad</div>
+    </div>
+</section>
+
+<section id="contacto" class="section fade-in">
+    <h2>Contacto</h2>
+    <p>Solicitá tu cotización sin compromiso.</p>
+
+    <div class="contact-box">
+        <p>📲 WhatsApp: <strong>+54 9 11  3105-9439</strong></p>
+        <p>📧 Email: <strong>contacto@transportelongueira.com</strong></p>
+        <p>📍 Zona de trabajo: Empresas · Aires · A demanda</p>
+
+        <a href="https://wa.me/5491131059439" target="_blank" class="btn">
+            Hablemos por WhatsApp
+        </a>
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2025 Transporte Longueira. Todos los derechos reservados.</p>
+</footer>
+<a href="https://wa.me/5491131059439"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="WhatsApp">
+   💬
+</a>
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+});
+
+document.querySelectorAll(".fade-in").forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>
